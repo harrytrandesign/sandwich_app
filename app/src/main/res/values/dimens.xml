@@ -2,4 +2,7 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="standard_padding">6dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="auto_layout_zero_value">0dp</dimen>
 </resources>

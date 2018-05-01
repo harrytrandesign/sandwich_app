@@ -47,7 +47,6 @@ public class DetailActivity extends AppCompatActivity {
 
         // Testing out Butterknife bindview
         ButterKnife.bind(this);
-//        setupLayout();
 
         Intent intent = getIntent();
         if (intent == null) {
@@ -67,8 +66,8 @@ public class DetailActivity extends AppCompatActivity {
         String json = sandwiches[position];
         Sandwich sandwich = JsonUtils.parseSandwichJson(json);
 
-        Log.i(LOG_TAG_SAND, sandwich.getMainName());
         // Log the sandwich data
+        Log.i(LOG_TAG_SAND, sandwich.getMainName());
         Log.i(LOG_TAG_DATA, json);
         Log.i(LOG_TAG_DATA, "The position of the sandwich " + position);
 

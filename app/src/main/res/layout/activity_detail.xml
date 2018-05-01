@@ -14,14 +14,14 @@
         <ImageView
             android:id="@+id/image_iv"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/image_height"
             android:adjustViewBounds="true"
             android:contentDescription="@string/sandwich_picture_content_description"
             android:scaleType="centerCrop"/>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/auto_layout_zero_value"
             android:layout_weight="1"
             android:scrollbars="vertical">
 
@@ -29,8 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingEnd="6dp"
-                android:paddingStart="6dp">
+                android:paddingEnd="@dimen/standard_padding"
+                android:paddingStart="@dimen/standard_padding">
 
                 <TextView
                     style="@style/header_style"
@@ -42,8 +42,7 @@
                     android:id="@+id/origin_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_sandwich"
-                    tools:text="San Francisco"/>
+                    android:text="@string/test_sandwich"/>
 
                 <TextView
                     style="@style/header_style"
@@ -55,8 +54,7 @@
                     android:id="@+id/also_known_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_aka"
-                    tools:text="Club Sandwich"/>
+                    android:text="@string/test_aka"/>
 
                 <TextView
                     style="@style/header_style"
@@ -68,8 +66,7 @@
                     android:id="@+id/ingredients_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_ingredients"
-                    tools:text="Lettuce\nCheese\nBacon"/>
+                    android:text="@string/test_ingredients"/>
 
                 <TextView
                     style="@style/header_style"
@@ -81,8 +78,7 @@
                     android:id="@+id/description_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    tools:text="This sandwich tastes delicious."/>
+                    android:text="@string/test_description"/>
 
             </LinearLayout>
 
